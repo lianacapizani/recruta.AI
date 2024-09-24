@@ -1,0 +1,66 @@
+:root {
+    --color-primary-800:#1D1E4C;
+    --color-primary-600: #2A2B67 ;
+    --color-primary-400: #474885 ;
+    --color-primary-200: #94a3c1 ;
+
+    --color-secondary-800: #E94600;
+    --color-secondary-600: #ff783e;
+    --color-secondary-400: #FCB07A;
+
+    --color-dark-800: #1E1E1E;
+    --color-dark-600: #4E4E4E;
+    --color-dark-400: #8D8D8D;
+    --color-dark-200: #C6C6C6;
+
+    --color-light-200:#FBFBFB;
+    --color-light-000:#FFFFFF;
+
+
+    --font-family: "Manrope", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  font-weight: 600;
+}
+
+button {
+ border: none;
+}
+
+/* .section-title {
+  font-size: 3.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2rem 0;
+} */
