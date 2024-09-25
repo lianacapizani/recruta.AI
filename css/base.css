@@ -3,6 +3,7 @@
     --color-primary-600: #2A2B67 ;
     --color-primary-400: #474885 ;
     --color-primary-200: #94a3c1 ;
+    --color-primary-100: #b2bfd8 ;
 
     --color-secondary-800: #E94600;
     --color-secondary-600: #ff783e;
@@ -29,6 +30,7 @@
 
 body {
   width: 100%;
+    background-color: var(--color-primary-800);
 }
 
 html {
@@ -59,15 +61,15 @@ button {
 }
 
  .section-title {
-  font-size: 3.2rem;
+  font-size: 3.4rem;
   font-weight: 700;
   text-transform: uppercase;
  /* padding: 4rem 0  2rem 0;*/
 } 
 
 .section-subtitle {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.2rem;
+  font-weight: 500;
   font-family: "Archivo Black", sans-serif;
   padding: 1.4rem 0;
   line-height: 1.2;
