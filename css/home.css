@@ -46,28 +46,35 @@
 }
 
 .buttons-container button {
-  padding: 0.6rem 1.6rem;
+  padding: 0.8rem 1.8rem;
   margin-right: 1rem;
   font-size: 1.6rem;
   font-weight: 600;
   white-space: nowrap;
   display: flex;
-  border-radius: 0.6rem;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 0.2rem;
+
+  & i {
+    color: var(--color-light-000);
+  }
 }
 
-.login {
+.login-btn {
   background-color: var(--color-primary-400);
 }
 
-.login:hover {
+.login-btn:hover {
   background-color: var(--color-primary-200);
 }
 
-.cadastro {
+.cadastro-btn {
   background-color: var(--color-secondary-800);
 }
 
-.cadastro:hover {
+.cadastro-btn:hover,
+.cadastro-btn:focus {
   background-color: var(--color-secondary-600);
 }
 
@@ -76,37 +83,35 @@
   cursor: pointer;
 }
 
-@media (max-width: 890px) {
-  .nav-btn {
-    visibility: hidden;
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-@media (max-width: 700px) {
-  .menu-item a {
-    font-size: 1.3rem;
-    padding: 0rem;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 5.05rem;
+  background-color: var(--color-secondary-800);
+  min-width: 11.701rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-@media (max-width: 600px) {
-  .header-page {
-    height: 10rem;
-    justify-content: space-between;
-    gap: 5rem;
+.dropdown-content a {
+  color: var(--color-light-000);
+  padding: .8rem 1.6rem;
+  text-decoration: none;
+  display: block;
+  font-size: 1.6rem;
+}
 
-    & nav {
-      display: flex;
-      align-items: center;
+.dropdown-content a:hover {
+  background-color: var(--color-secondary-600);
+}
 
-      & ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        line-height: 2rem;
-      }
-    }
-  }
+.show {
+  display: block;
 }
 
 /*************** BANNER SECTION ***************/
@@ -148,8 +153,8 @@
   }
 
   & a {
-    color: var(--color-dark-200);
-    font-size: 1.8rem;
+    color: var(--color-primary-100);
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 1.1;
     text-decoration: none;
@@ -199,6 +204,11 @@
   background-color: var(--color-primary-800);
   color: var(--color-light-000);
   font-size: 1.8rem;
+
+  &:hover {
+    background-color: var(--color-primary-400);
+    font-weight: 400;
+  }
 }
 
 .img-container {
@@ -312,6 +322,12 @@
       background-color: var(--color-secondary-800);
       color: var(--color-light-000);
       font-size: 1.8rem;
+
+      &:hover {
+        background-color: var(--color-secondary-600);
+        font-weight: 400;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -320,7 +336,7 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  gap: 2.4rem;
+  gap: 3rem;
   justify-content: center;
   padding: 1.6rem 0;
 }
@@ -358,9 +374,68 @@
   }
 }
 
-/************** NEWS-SECTION **************/
+/************** NEWS-SECTION com uma div que tera um h2 + form (2inputs e 1 text area) + um button**************/
+.news-section {
+  width: 100%;
+}
 
+.news-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 6rem 10rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
 
+  & h2 {
+    color: var(--color-primary-100);
+    font-size: 3.6rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  & button {
+    padding: 0.8rem 2rem;
+    border-radius: 0.4rem;
+    background-color: var(--color-secondary-800);
+    color: var(--color-light-000);
+    font-size: 1.8rem;
+
+    &:hover {
+      background-color: var(--color-secondary-600);
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}
+
+.news-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+  max-width: 500px;
+
+  & label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: -1rem;
+    color: var(--color-light-200);
+    font-weight: 300;
+  }
+
+  & input,
+  & textarea {
+    width: 100%;
+    padding: 0.6rem 2rem;
+    border-radius: 0.4rem;
+    border: none;
+    font-size: 1.6rem;
+    resize: none;
+  }
+}
 
 /**************** FOOTER ****************/
 
@@ -396,6 +471,42 @@
 
     & a:hover {
       font-weight: 600;
+    }
+  }
+}
+
+/************* QUERY-MEDIAS ***************/
+
+@media (max-width: 890px) {
+  .cadastro-btn,
+  .login-btn {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-item a {
+    font-size: 1.4rem;
+    padding: 0rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-page {
+    height: 10rem;
+    justify-content: space-between;
+    gap: 5rem;
+
+    & nav {
+      display: flex;
+      align-items: center;
+
+      & ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 2rem;
+      }
     }
   }
 }

@@ -49,7 +49,7 @@ ol {
 
 a {
   text-decoration: none;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 a:hover {
