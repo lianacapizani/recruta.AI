@@ -30,7 +30,7 @@
 
 body {
   width: 100%;
-    background-color: var(--color-primary-800);
+  background-color: var(--color-primary-800);
 }
 
 html {
@@ -74,4 +74,43 @@ button {
   padding: 1.4rem 0;
   line-height: 1.2;
   text-transform: capitalize;
+}
+
+/**************** FOOTER ****************/
+
+.footer-section {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-secondary-800);
+  color: var(--color-light-000);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 2rem;
+  align-items: center;
+}
+
+.logo-basica p {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.footer-content ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+
+  & li {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0 2rem;
+
+    & a {
+      color: var(--color-light-000);
+      text-decoration: none;
+    }
+
+    & a:hover {
+      font-weight: 600;
+    }
+  }
 }
