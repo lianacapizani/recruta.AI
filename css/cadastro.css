@@ -10,7 +10,7 @@
     background-color: var(--color-light-000);
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 65rem;
+    max-width: 60rem;
     height:auto;
     width: 100%;
     display: flex;
@@ -40,29 +40,17 @@
     flex-direction: column;
     margin-bottom: 1rem ;
   }
-
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas de igual largura */
-    gap: 1.5rem; /* Espaço entre as colunas */
-  }
   
   .form-group {
-    margin-bottom: 0; /* Remova a margem inferior para melhor espaçamento na grid */
+    margin-bottom: 1.6rem;
   }
   
-  
-  .form-group {
-    margin-bottom: 1.5rem;
- 
-  
-  & label {
+  .form-group label {
     font-size: 1.6rem;
     color: var(--color-primary-800);
-    margin-bottom: 0.5rem;
   }
   
-  & input {
+  .form-group input {
     width: 100%;
     padding: .8rem;
     font-size: 1.4rem;
@@ -70,7 +58,10 @@
     border-radius: .5rem;
     margin-bottom: .4rem;
     }
-  }
+
+    .form-group .date{
+      color: var(--color-dark-400);
+    }
 
   .password-container {
     position: relative;
@@ -85,10 +76,11 @@
   
   .password-container i {
     position: absolute;
-    right: 1rem;
+    right: 1.2rem;
     top: 1.4rem;
     cursor: pointer;
     color: var(--color-dark-400);
+    font-size: 1.3rem;
   }
   
   .password-container i:hover {

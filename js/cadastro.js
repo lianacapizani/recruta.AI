@@ -22,6 +22,17 @@ document.getElementById('cadastro-form').addEventListener('submit', function(eve
   });
   
 
+// CPF AJUSTAR APÓS DIGITAR
+
+    document.getElementById('cpf').addEventListener('input', function (e) {
+        let input = e.target.value.replace(/\D/g, ''); // Remove todos os caracteres que não são dígitos
+        input = input.replace(/(\d{3})(\d)/, '$1.$2'); // Adiciona o ponto após os 3 primeiros dígitos
+        input = input.replace(/(\d{3})(\d)/, '$1.$2'); // Adiciona o ponto após os próximos 3 dígitos
+        input = input.replace(/(\d{3})(\d)/, '$1-$2'); // Adiciona o traço antes dos últimos 2 dígitos
+        e.target.value = input; // Atualiza o valor do input
+    });
+
+
 //JS PARA OCULTAR OU NÃO A SENHA
 
 const togglePassword = document.querySelector("#togglePassword");
