@@ -1,0 +1,258 @@
+
+  body {
+    background-color: var(--color-primary-600);
+    font-family: var(--font-family);
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: var(--color-light-000);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 65rem;
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+    padding: 2rem 0;
+}
+
+.container h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-primary-800);
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2;
+  font-weight: 500 ;
+}
+
+  .logo-container {
+    text-align: center;
+    padding: 1rem 0 1.6rem 0;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem ;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de igual largura */
+    gap: 1.5rem; /* Espaço entre as colunas */
+  }
+  
+  .form-group {
+    margin-bottom: 0; /* Remova a margem inferior para melhor espaçamento na grid */
+  }
+  
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+ 
+  
+  & label {
+    font-size: 1.6rem;
+    color: var(--color-primary-800);
+    margin-bottom: 0.5rem;
+  }
+  
+  & input {
+    width: 100%;
+    padding: .8rem;
+    font-size: 1.4rem;
+    border: 1px solid var(--color-primary-200);
+    border-radius: .5rem;
+    margin-bottom: .4rem;
+    }
+  }
+
+  .password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-container input {
+    width: 100%;
+    padding-right: 2.5rem;
+  }
+  
+  .password-container i {
+    position: absolute;
+    right: 1rem;
+    top: 1.4rem;
+    cursor: pointer;
+    color: var(--color-dark-400);
+  }
+  
+  .password-container i:hover {
+    color: var(--color-dark-600);
+  }
+  
+  
+  .btn-cadastro  {
+    background-color: var(--color-secondary-800);
+    color: white;
+    padding: .8rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.6rem;
+  }
+  
+  .btn-cadastro:hover {
+    background-color: var(--color-secondary-600);
+  }
+
+
+  .terms {
+    color: var(--color-dark-800);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start ;
+    align-items: center;
+  }
+  
+    .terms input[type="checkbox"] {
+        width: 1.4rem; 
+        height: 1.4rem; 
+        transform: scale(0.75); 
+        margin-right: 8px; 
+        cursor: pointer; 
+       
+    }
+
+    .terms label {
+        display: flex;
+        white-space: nowrap; 
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+  
+  .terms a{
+    text-decoration: none;
+    color: var(--color-dark-800);
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .terms a:hover {
+    transition: none;
+    color: var(--color-primary-400);
+  }
+  
+  /*outras opçoes de cadastro*/
+  .log-options {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 0.1rem solid var(--color-dark-200);
+    margin: 1rem 0;
+  }
+  
+  .login-text {
+    display: block;
+    margin-bottom: 1.4rem;
+    color: var(--color-dark-600);
+    font-size: 1.5rem;
+  }
+  
+  .login-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  
+  .login-btn {
+    border: 0.1rem solid var(--color-dark-400);
+    border-radius: 0.4rem;
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    background-color: var(--color-light-000);
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  
+  .login-btn:hover {
+    background-color: #ebeef3;
+  }
+
+  
+  .return:hover {
+    color: var(--color-primary-600);
+    transition: none;
+  }
+
+  .alrd-user {
+    width: 100%;
+  
+    & p {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+  
+
+  /*voltar*/
+  .return {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--color-dark-400);
+    justify-content: flex-end;
+    padding-top: .8rem;
+
+  }
+  
+  /* Responsivo para telas menores */
+  @media (max-width: 1520px) {
+    .container {
+  
+    }
+  }
+  
+  @media (max-width: 1390px) {
+    .container {
+    
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .container {
+    
+    }
+  }
+  
+  @media (max-width: 920px) {
+    .container {
+      padding: 2rem;
+    }
+  
+    input,  .btn-cadastro  {
+      font-size: 1.4rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
