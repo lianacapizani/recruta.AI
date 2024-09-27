@@ -92,17 +92,17 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 5.05rem;
+  top: 5.08rem;
   background-color: var(--color-secondary-800);
-  min-width: 13.1rem;
-  border-radius: 0 0 .4rem .4rem;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 11.65rem;
+  border-radius: 0 0 0.4rem 0.4rem;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
   color: var(--color-light-000);
-  padding: .8rem 1.6rem;
+  padding: 0.8rem 1.6rem;
   text-decoration: none;
   display: block;
   font-size: 1.6rem;
@@ -376,7 +376,7 @@
   }
 }
 
-/************** NEWS-SECTION com uma div que tera um h2 + form (2inputs e 1 text area) + um button**************/
+/************** NEWS-SECTION**************/
 .news-section {
   width: 100%;
 }

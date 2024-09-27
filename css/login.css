@@ -87,6 +87,30 @@
   color: var(--color-dark-400);
 }
 
+  .password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-container input {
+    width: 100%;
+    padding-right: 2.5rem;
+  }
+  
+  .password-container i {
+    position: absolute;
+    right: 1.2rem;
+    top: 1.7rem;
+    cursor: pointer;
+    color: var(--color-dark-400);
+    font-size: 1.6rem;
+  }
+  
+  .password-container i:hover {
+    color: var(--color-dark-600);
+  }
+
 .input-box .btn-login {
   width: 100%;
   background: var(--color-primary-800);
